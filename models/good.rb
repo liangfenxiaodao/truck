@@ -13,10 +13,10 @@ class Good
   def to_json(*a)
     {name: @name,
      price: @price,
-     from_suburb: @from.suburb,
-     to_suburb: @to.suburb,
-     pick_up_time: @pick_up_time,
-     arrive_time: @arrive_time
+     fromSuburb: @from.suburb,
+     toSuburb: @to.suburb,
+     pickUpTime: @pick_up_time,
+     arriveTime: @arrive_time
     }.to_json(*a)
   end
 
