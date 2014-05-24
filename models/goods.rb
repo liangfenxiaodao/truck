@@ -31,10 +31,10 @@ class Goods
     to_address = Address.new '235 SpringVale Road', 'Glen Waverley', 'Melbourne', 'VIC', '3156'
     to_address2 =  Address.new '18 Hull Road', 'Frankston', 'Melbourne', 'VIC', '3156'
     to_address3 =  Address.new '18 Hull Road', 'Ballarat', 'Melbourne', 'VIC', '3156'
-    good1 = Goods.new('Lanolin Oil', '$75', from_address, to_address, '2014-03-12T14:00:00', '2014-03-12T18:00:00', '2', '2014-03-12T18:00:00')
-    good2 = Goods.new('Manuka Honey', '$70', from_address2, to_address3, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '1', '2014-03-12T18:00:00')
-    good3 = Goods.new('Blackmore Fish Oil', '$72', from_address3, to_address2, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '1.5', '2014-03-12T18:00:00')
-    good4 = Goods.new('Manuka Honey', '$60', from_address, to_address3, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '4', '2014-03-12T18:00:00')
+    good1 = Goods.new('Lanolin Oil', '75', from_address, to_address, '2014-03-12T14:00:00', '2014-03-12T18:00:00', '2', '2014-03-12T18:00:00')
+    good2 = Goods.new('Manuka Honey', '70', from_address2, to_address3, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '1', '2014-03-12T18:00:00')
+    good3 = Goods.new('Blackmore Fish Oil', '72', from_address3, to_address2, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '1.5', '2014-03-12T18:00:00')
+    good4 = Goods.new('Manuka Honey', '60', from_address, to_address3, '2014-03-11T14:00:00', '2014-03-11T18:00:00', '4', '2014-03-12T18:00:00')
     [good1, good2, good3, good4]
   end
 end
