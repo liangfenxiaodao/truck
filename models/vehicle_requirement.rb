@@ -1,4 +1,4 @@
-class CarRequirement
+class VehicleRequirement
   attr_reader :type, :special_carrying_permit, :pallet_jack, :tail_gate
 
   def initialize(type, special_carrying_permit, pallet_jack, tail_gate)
