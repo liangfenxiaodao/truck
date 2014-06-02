@@ -5,4 +5,4 @@ require 'json'
 
 Dir.glob('./{models,helpers,controllers}/*.rb').each { |file| require file }
 
-map('/goods') {run GoodsController}
+map('/listings') {run ListingController}
