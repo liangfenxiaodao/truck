@@ -1,5 +1,13 @@
 class Address
-  attr_reader :street, :suburb, :city, :state, :postcode
+  include Mongoid::Document
+
+  field :street, type: String
+  field :suburb, type: String
+  field :city, type: String
+  field :state, type: String
+  field :postcode, type: String
+
+  embedded_in :user
 
   def initialize(street, suburb, city, state, postcode)
     @street = street

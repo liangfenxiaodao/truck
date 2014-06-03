@@ -1,8 +1,12 @@
 class User
-  attr_reader :id, :name, :is_customer
+  include Mongoid::Document
 
-  def initialize(name, is_customer)
-    @name = name
-    @is_customer = is_customer
-  end
+  field :first_name, type: String
+  field :middle_name, type: String
+  field :last_name, type: String
+  field :is_customer, type: Boolean
+  field :username, type: String
+  field :password, type: String
+
+  embeds_many :address
 end
