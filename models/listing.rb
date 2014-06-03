@@ -29,12 +29,13 @@ class Listing
 
 
   def self.get_all
-    from_address = Address.new '6 Marama Street', 'Blackburn South', 'Melbourne', 'VIC', '3130'
-    from_address2 = Address.new '235 SpringVale Road', 'Hawthorn', 'Melbourne', 'VIC', '3156'
-    from_address3 = Address.new '235 SpringVale Road', 'Geelong', 'Melbourne', 'VIC', '3156'
-    to_address = Address.new '235 SpringVale Road', 'Glen Waverley', 'Melbourne', 'VIC', '3156'
-    to_address2 = Address.new '18 Hull Road', 'Frankston', 'Melbourne', 'VIC', '3156'
-    to_address3 = Address.new '18 Hull Road', 'Ballarat', 'Melbourne', 'VIC', '3156'
+    #Address.new(street: "6 Marama Street", suburb: "Blackburn South", )
+    #from_address = Address.new '6 Marama Street', 'Blackburn South', 'Melbourne', 'VIC', '3130'
+    #from_address2 = Address.new '235 SpringVale Road', 'Hawthorn', 'Melbourne', 'VIC', '3156'
+    #from_address3 = Address.new '235 SpringVale Road', 'Geelong', 'Melbourne', 'VIC', '3156'
+    #to_address = Address.new '235 SpringVale Road', 'Glen Waverley', 'Melbourne', 'VIC', '3156'
+    #to_address2 = Address.new '18 Hull Road', 'Frankston', 'Melbourne', 'VIC', '3156'
+    #to_address3 = Address.new '18 Hull Road', 'Ballarat', 'Melbourne', 'VIC', '3156'
     vehicle_requirement1 = VehicleRequirement.new 'Var', 0, 0, 'Not Required'
     vehicle_requirement2 = VehicleRequirement.new 'Tray', 1, 1, '2.5T'
     vehicle_requirement3 = VehicleRequirement.new 'Tautiner', 1, 1, '2.0T'
