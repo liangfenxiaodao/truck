@@ -23,8 +23,9 @@ class UserController < ApplicationController
                           state: params[:state],
                           postcode: params[:postcode],
                           country: params[:country])
-    User.find(params[:id]).address.push(address)
-    User.find(params[:id])
+    user = User.find(params[:id])
+    user.address.push(address)
+    user
   end
 
 end

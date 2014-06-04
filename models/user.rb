@@ -9,4 +9,6 @@ class User
   field :password, type: String
 
   embeds_many :address
+
+  has_many :listing
 end
