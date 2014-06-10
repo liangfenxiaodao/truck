@@ -7,7 +7,7 @@ class ListingController < ApplicationController
   end
 
   post '/' do
-    user = User.find(params[:id])
+    user = User.find(params[:user_id])
     from = user.address.find(params[:from_address_id])
     to = user.address.find(params[:to_address_id])
     listing = Listing.create(
