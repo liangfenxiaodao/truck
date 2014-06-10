@@ -13,6 +13,7 @@ class Listing
   field :tail_gate, type: String
   field :from_address, type: String
   field :to_address, type: String
+  field :job_number, type: String
 
   belongs_to :user
 
