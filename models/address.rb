@@ -7,6 +7,7 @@ class Address
   field :state, type: String
   field :postcode, type: String
   field :country, type: String
-
+  field :latitude, type: BigDecimal
+  field :longitude, type: BigDecimal
   embedded_in :user
 end

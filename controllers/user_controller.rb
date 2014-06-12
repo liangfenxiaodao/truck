@@ -17,12 +17,17 @@ class UserController < ApplicationController
   end
 
   post '/:id/address' do
-    address = Address.new(street: params[:street],
-                          suburb: params[:suburb],
-                          city: params[:city],
-                          state: params[:state],
-                          postcode: params[:postcode],
-                          country: params[:country])
+    address_coordinate = Geocoder.search "#{params[:street]}, #{params[:suburb]}, #{params[:city]}, #{params[:state]}, #{params[:postcode]}, #{params[:country]}"
+    address = Address.new(
+        street: params[:street],
+        suburb: params[:suburb],
+        city: params[:city],
+        state: params[:state],
+        postcode: params[:postcode],
+        country: params[:country],
+        latitude: address_coordinate[0].coordinates[0],
+        longitude: address_coordinate[0].coordinates[1]
+    )
     user = User.find(params[:id])
     user.address.push(address)
     user

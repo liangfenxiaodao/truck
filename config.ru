@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'json'
 require 'mongoid'
+require 'geocoder'
 
 Mongoid.load!("mongoid.yml")
 

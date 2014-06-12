@@ -22,8 +22,8 @@ class ListingController < ApplicationController
         pallet_jack_required: params[:pallet_jack_required],
         tail_gate: params[:tail_gate],
         job_number: params[:job_number],
-        from_address: "#{from.street}, #{from.suburb}, #{from.city}, #{from.state}, #{from.postcode}, #{from.country}",
-        to_address: "#{to.street}, #{to.suburb}, #{to.city}, #{to.state}, #{to.postcode}, #{to.country}"
+        from_address: "#{from.street}, #{from.suburb}, #{from.city}, #{from.state}, #{from.postcode}, #{from.country}, #{from.latitude}, #{from.longitude}",
+        to_address: "#{to.street}, #{to.suburb}, #{to.city}, #{to.state}, #{to.postcode}, #{to.country}, #{to.latitude}, #{to.longitude}"
     )
     user.listing.push listing
     listing
