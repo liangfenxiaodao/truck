@@ -13,7 +13,9 @@ class ListingController < ApplicationController
     listing = Listing.create(
         price: params[:price],
         weight: params[:weight],
-        volume: params[:volume],
+        length: params[:length],
+        width: params[:width],
+        height: params[:height],
         pick_up_time: params[:pick_up_time],
         arrive_time: params[:arrive_time],
         bid_ending_time: params[:bid_ending_time],
