@@ -4,3 +4,7 @@ development:
       database: trucking
       hosts:
         - localhost:27017
+production:
+  sessions:
+    default:
+      uri: mongodb://lijian:hanfang@kahana.mongohq.com:10012/trucking
