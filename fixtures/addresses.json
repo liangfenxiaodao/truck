@@ -1,0 +1,102 @@
+[
+    {
+        "street": "6 Marama Street",
+        "suburb": "Blackburn South",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3130",
+        "country": "Australia",
+        "latitude": "-37.839572",
+        "longitude": "145.152064"
+    },
+    {
+        "street": "18 Jackson Street",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.794483",
+        "longitude": "145.288522"
+    },
+    {
+        "street": "65 Hewish Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.7965",
+        "longitude": "145.288734"
+    },
+    {
+        "street": "65 Hewish Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.7965",
+        "longitude": "145.288734"
+    },
+    {
+        "street": "295 Mt Dandenong Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.799063",
+        "longitude": "145.288043"
+    },
+    {
+        "street": "295 Mt Dandenong Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.799063",
+        "longitude": "145.288043"
+    },
+    {
+        "street": "355 Mt Dandenong Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.799933",
+        "longitude": "145.294714"
+    },
+    {
+        "street": "355 Mt Dandenong Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.799933",
+        "longitude": "145.294714"
+    },
+    {
+        "street": "12 Hull Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.797225",
+        "longitude": "145.291577"
+    },
+    {
+        "street": "12 Hull Road",
+        "suburb": "Croydon",
+        "city": "Melbourne",
+        "state": "VIC",
+        "postcode": "3136",
+        "country": "Australia",
+        "latitude": "-37.797225",
+        "longitude": "145.291577"
+    }
+]
