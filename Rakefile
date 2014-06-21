@@ -28,7 +28,7 @@ namespace :mongo do
     end
   end
 
-  task :add_address => :db do
+  task :add_address => :create_user do
     user = User.find_by(username: "jacky.li")
     file = File.read(File.join(Dir.pwd, File::Separator, "fixtures/addresses.json"))
     addresses = JSON.parse(file)
