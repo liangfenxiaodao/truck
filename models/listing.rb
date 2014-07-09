@@ -1,7 +1,7 @@
 class Listing
   include Mongoid::Document
 
-  field :referenceRate, type: Integer
+  field :reference_rate, type: Integer
   field :weight, type: String
   field :length, type: String
   field :width, type: String

@@ -11,7 +11,7 @@ class ListingController < ApplicationController
     from = user.address.find(params[:from_address_id])
     to = user.address.find(params[:to_address_id])
     listing = Listing.create(
-        referenceRate: params[:referenceRate],
+        reference_rate: params[:reference_rate],
         weight: params[:weight],
         length: params[:length],
         width: params[:width],
