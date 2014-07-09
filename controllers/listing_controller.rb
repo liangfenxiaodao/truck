@@ -30,4 +30,17 @@ class ListingController < ApplicationController
     user.listing.push listing
     listing
   end
+
+  post '/:id/bidding_activities' do
+    content_type :json
+    listing = Listing.find(params[:id])
+    bidding_activity = BiddingActivity.new(
+        bidding_time: params[:bidding_time],
+        bidding_value: params[:bidding_value],
+        bidder_id: params[:bidder_id],
+        bidder_name: params[:bidder_name]
+    )
+    listing.bidding_activity.push bidding_activity
+    listing.to_json
+  end
 end
