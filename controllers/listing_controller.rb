@@ -43,4 +43,9 @@ class ListingController < ApplicationController
     listing.bidding_activity.push bidding_activity
     listing.to_json
   end
+
+  get '/:id' do
+    content_type :json
+    Listing.find(params[:id]).to_json
+  end
 end
