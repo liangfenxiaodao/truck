@@ -25,7 +25,8 @@ class ListingController < ApplicationController
         tail_gate: params[:tail_gate],
         job_number: params[:job_number],
         from_address: "#{from.street}, #{from.suburb}, #{from.city}, #{from.state}, #{from.postcode}, #{from.country}, #{from.latitude}, #{from.longitude}",
-        to_address: "#{to.street}, #{to.suburb}, #{to.city}, #{to.state}, #{to.postcode}, #{to.country}, #{to.latitude}, #{to.longitude}"
+        to_address: "#{to.street}, #{to.suburb}, #{to.city}, #{to.state}, #{to.postcode}, #{to.country}, #{to.latitude}, #{to.longitude}",
+        is_closed: false
     )
     user.listing.push listing
     listing

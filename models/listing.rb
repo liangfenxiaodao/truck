@@ -16,6 +16,7 @@ class Listing
   field :from_address, type: String
   field :to_address, type: String
   field :job_number, type: String
+  field :is_closed, type: Boolean
 
   belongs_to :user
 
