@@ -33,7 +33,7 @@ namespace :mongo do
     file = File.read(File.join(Dir.pwd, File::Separator, "fixtures/addresses.json"))
     addresses = JSON.parse(file)
     addresses.each{ |address|
-      user.address.push (Address.new.from_json (JSON.generate address))
+      user.addresses.push (Address.new.from_json (JSON.generate address))
     }
   end
 

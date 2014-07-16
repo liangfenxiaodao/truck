@@ -20,5 +20,5 @@ class Listing
 
   belongs_to :user
 
-  embeds_many :bidding_activity
+  embeds_many :bidding_activities
 end

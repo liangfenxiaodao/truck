@@ -8,7 +8,7 @@ class User
   field :username, type: String
   field :password, type: String
 
-  embeds_many :address
+  embeds_many :addresses
 
-  has_many :listing
+  has_many :listings
 end

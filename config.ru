@@ -8,7 +8,7 @@ require 'geocoder'
 Mongoid.load!("mongoid.yml")
 
 ActiveSupport::Inflector.inflections do |inflect|
-  inflect.singular("address", "address")
+  inflect.singular("addresses", "address")
 end
 
 Dir.glob('./{models,helpers,controllers}/*.rb').each { |file| require file }

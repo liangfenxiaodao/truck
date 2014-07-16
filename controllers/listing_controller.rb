@@ -8,8 +8,8 @@ class ListingController < ApplicationController
 
   post '/' do
     user = User.find(params[:user_id])
-    from = user.address.find(params[:from_address_id])
-    to = user.address.find(params[:to_address_id])
+    from = user.addresses.find(params[:from_address_id])
+    to = user.addresses.find(params[:to_address_id])
     listing = Listing.create(
         reference_rate: params[:reference_rate],
         weight: params[:weight],
@@ -28,7 +28,7 @@ class ListingController < ApplicationController
         to_address: "#{to.street}, #{to.suburb}, #{to.city}, #{to.state}, #{to.postcode}, #{to.country}, #{to.latitude}, #{to.longitude}",
         is_closed: false
     )
-    user.listing.push listing
+    user.listings.push listing
     listing
   end
 
@@ -42,7 +42,7 @@ class ListingController < ApplicationController
         bidder_name: params[:bidder_name],
         is_winner: false
     )
-    listing.bidding_activity.push bidding_activity
+    listing.bidding_activities.push bidding_activity
     listing.to_json
   end
 

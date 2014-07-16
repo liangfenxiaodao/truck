@@ -30,7 +30,7 @@ class UserController < ApplicationController
         longitude: address_coordinate[0].coordinates[1]
     )
     user = User.find(params[:id])
-    user.address.push(address)
+    user.addresses.push(address)
     user
   end
 
