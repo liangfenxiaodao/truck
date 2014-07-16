@@ -38,7 +38,8 @@ class ListingController < ApplicationController
         bidding_time: params[:bidding_time],
         bidding_value: params[:bidding_value],
         bidder_id: params[:bidder_id],
-        bidder_name: params[:bidder_name]
+        bidder_name: params[:bidder_name],
+        is_winner: false
     )
     listing.bidding_activity.push bidding_activity
     listing.to_json
