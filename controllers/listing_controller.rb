@@ -32,6 +32,11 @@ class ListingController < ApplicationController
     listing
   end
 
+  get '/:id' do
+    content_type :json
+    Listing.find(params[:id]).to_json
+  end
+
   post '/:id/bidding_activities' do
     content_type :json
     listing = Listing.find(params[:id])
@@ -46,8 +51,8 @@ class ListingController < ApplicationController
     listing.to_json
   end
 
-  get '/:id' do
+  get '/:id/bidding_activities' do
     content_type :json
-    Listing.find(params[:id]).to_json
+    Listing.find(params[:id]).bidding_activities.to_json
   end
 end
