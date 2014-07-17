@@ -12,9 +12,9 @@ class UserController < ApplicationController
     )
   end
 
-  get '/:id' do
+  get '/:user_name' do
     content_type :json
-    User.find(params[:id]).to_json
+    User.where(username: params[:user_name]).to_json
   end
 
   post '/:id/address' do
