@@ -43,8 +43,8 @@ class ListingController < ApplicationController
     bidding_activity = BiddingActivity.new(
         bidding_time: params[:bidding_time],
         bidding_value: params[:bidding_value],
-        bidder_id: params[:bidder_id],
-        bidder_name: params[:bidder_name],
+        bidder_id: request.env['HTTP_USER_ID'],
+        bidder_name: request.env['HTTP_USER_NAME'],
         is_winner: false
     )
     listing.bidding_activities.push bidding_activity
